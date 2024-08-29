@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Order Form</title>
+</head>
+<body>
+
+<h1>Product Order Form</h1>
+
+<form action="/submit-order" method="POST">
+
+    <h2>Select Your Products</h2>
+    
+    <label>
+        <input type="checkbox" name="product[]" value="Z-Min (Topical Minoxidil) 90 Day - $195">
+        Z-Min (Topical Minoxidil) 90 Day - $195
+    </label>
+    <input type="number" name="quantity[]" min="1" placeholder="Quantity"><br>
+
+    <label>
+        <input type="checkbox" name="product[]" value="Z-Fin (Topical Finasteride) 90 Day - $195">
+        Z-Fin (Topical Finasteride) 90 Day - $195
+    </label>
+    <input type="number" name="quantity[]" min="1" placeholder="Quantity"><br>
+
+    <label>
+        <input type="checkbox" name="product[]" value="Z-ProVita .5mg 90 Day - $175">
+        Z-ProVita .5mg 90 Day - $175
+    </label>
+    <input type="number" name="quantity[]" min="1" placeholder="Quantity"><br>
+
+    <label>
+        <input type="checkbox" name="product[]" value="Z-ProVita 1mg 90 Day - $175">
+        Z-ProVita 1mg 90 Day - $175
+    </label>
+    <input type="number" name="quantity[]" min="1" placeholder="Quantity"><br>
+
+    <label>
+        <input type="checkbox" name="product[]" value="Z-ProVita 2.5mg 90 Day - $175">
+        Z-ProVita 2.5mg 90 Day - $175
+    </label>
+    <input type="number" name="quantity[]" min="1" placeholder="Quantity"><br>
+
+    <label>
+        <input type="checkbox" name="product[]" value="Z-ProVita 5mg 90 Day - $175">
+        Z-ProVita 5mg 90 Day - $175
+    </label>
+    <input type="number" name="quantity[]" min="1" placeholder="Quantity"><br>
+
+    <label>
+        <input type="checkbox" name="product[]" value="Oral Minoxidil 2.5mg 90 Day - $175">
+        Oral Minoxidil 2.5mg 90 Day - $175
+    </label>
+    <input type="number" name="quantity[]" min="1" placeholder="Quantity"><br>
+
+    <label>
+        <input type="checkbox" name="product[]" value="Dutasteride .5mg 90 Day - $175">
+        Dutasteride .5mg 90 Day - $175
+    </label>
+    <input type="number" name="quantity[]" min="1" placeholder="Quantity"><br>
+
+    <label>
+        <input type="checkbox" name="product[]" value="Viviscal Pro 30 Day - $81.56">
+        Viviscal Pro 30 Day - $81.56
+    </label>
+    <input type="number" name="quantity[]" min="1" placeholder="Quantity"><br>
+
+    <label>
+        <input type="checkbox" name="product[]" value="Viviscal Pro 90 Day - $228.56">
+        Viviscal Pro 90 Day - $228.56
+    </label>
+    <input type="number" name="quantity[]" min="1" placeholder="Quantity"><br>
+
+    <label>
+        <input type="checkbox" name="product[]" value="Propecia 1mg 90 Day - $399">
+        Propecia 1mg 90 Day - $399
+    </label>
+    <input type="number" name="quantity[]" min="1" placeholder="Quantity"><br>
+
+    <label>
+        <input type="checkbox" name="product[]" value="Z-Cleanse & Sustenance - $199.95">
+        Z-Cleanse & Sustenance - $199.95
+    </label>
+    <input type="number" name="quantity[]" min="1" placeholder="Quantity"><br>
+
+    <label>
+        <input type="checkbox" name="product[]" value="SureThik - $26">
+        SureThik - $26
+    </label>
+    <input type="number" name="quantity[]" min="1" placeholder="Quantity"><br>
+
+    <label>
+        <input type="checkbox" name="product[]" value="KeraFactor Solution - $169">
+        KeraFactor Solution - $169
+    </label>
+    <input type="number" name="quantity[]" min="1" placeholder="Quantity"><br>
+
+    <label>
+        <input type="checkbox" name="product[]" value="Z-Cap (laser Cap) - $3,000">
+        Z-Cap (laser Cap) - $3,000
+    </label>
+    <input type="number" name="quantity[]" min="1" placeholder="Quantity"><br>
+
+    <h2>Patient Information</h2>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required><br>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required><br>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required><br>
+
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state" required><br>
+
+    <label for="zip">Zip Code:</label>
+    <input type="text" id="zip" name="zip" required><br>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="sex">Sex:</label>
+    <select id="sex" name="sex" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select><br>
+
+    <label for="allergies">Allergies:</label>
+    <input type="text" id="allergies" name="allergies"><br>
+
+    <h2>Payment Information</h2>
+
+    <label for="cc-number">Credit Card Number:</label>
+    <input type="text" id="cc-number" name="cc-number" required><br>
+
+    <label for="exp-date">Expiration Date:</label>
+    <input type="text" id="exp-date" name="exp-date" placeholder="MM/YY" required><br>
+
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" required><br>
+
+    <h2>Order Type</h2>
+
+    <label>
+        <input type="radio" name="order-type" value="One-Time Order" required>
+        One-Time Order
+    </label><br>
+
+    <label>
+        <input type="radio" name="order-type" value="Recurrent Auto-Ship Order" required>
+        Recurrent Auto-Ship Order
+    </label><br>
+
+    <h2>Signatures</h2>
+
+    <label for="physician-signature">Physician Signature:</label>
+    <input type="text" id="physician-signature" name="physician-signature" required><br>
+
+    <label for="patient-signature">Patient Signature:</label>
+    <input type="text" id="patient-signature" name="patient-signature" required><br>
+
+    <input type="submit" value="Submit Order">
+
+</form>
+
+</body>
+</html>
